@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CitizenCardSystemWebAgain</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>AdminLogin</display-name>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>com.controllers.AdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/AdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CitizenLogin</display-name>
+    <servlet-name>CitizenLogin</servlet-name>
+    <servlet-class>com.controllers.CitizenLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CitizenLogin</servlet-name>
+    <url-pattern>/CitizenLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CitizenRegisterServlet</display-name>
+    <servlet-name>CitizenRegisterServlet</servlet-name>
+    <servlet-class>com.controllers.CitizenRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CitizenRegisterServlet</servlet-name>
+    <url-pattern>/CitizenRegisterServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
